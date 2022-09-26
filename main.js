@@ -139,16 +139,12 @@ function titleCase(str){
     str =  str.toLowerCase();
     for(let i = 0; i < str.length; i++){
         if(i === 0){
-            let temp2 = str[i];
-            temp2 = temp2.toUpperCase();
-            temp += temp2;
+            temp += str[i].toUpperCase();
             continue;
         } 
         if(str[i] === " ") {
             temp += str[i];
-            let temp3 = str[i+1];
-            temp3 = temp3.toUpperCase();
-            temp += temp3;
+            temp += str[i+1].toUpperCase();
             i++;
             continue;
         }
@@ -167,9 +163,7 @@ function camelCase(str){
     let temp = "";
     for(let i = 0; i < str.length; i++){
         if(str[i] === " "){
-            let temp3 = str[i+1];
-            temp3 = temp3.toUpperCase();
-            temp += temp3;
+            temp += str[i+1].toUpperCase();
             i++;
             continue;
         }
@@ -188,11 +182,6 @@ function crazyCase2ReturnOfCrazyCase(str){
     for(let i = 0 ; i < str.length; i++) {
         if(str[i] === " ") {
             temp += str[i];
-            if(cnt === 1){
-                cnt = 1;
-            } else {
-                cnt = 2;
-            }
         } else if(cnt === 1){
             temp += str[i].toLowerCase();
             cnt = 2;
