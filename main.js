@@ -1,5 +1,4 @@
-console.log('Challenge 1');
-console.log('');
+header(1);
 console.log(xify('hello'));
 console.log(xify('Hi there'));
 function xify(str) {
@@ -9,9 +8,7 @@ function xify(str) {
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 2');
-console.log('');
+header(2);
 console.log(yellingChars('goodness'));
 console.log(yellingChars('oh hello'));
 function yellingChars(str){
@@ -21,9 +18,7 @@ function yellingChars(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 3');
-console.log('');
+header(3);
 console.log(indexedChars('hello'));
 console.log(indexedChars('bye'));
 function indexedChars(str){
@@ -34,9 +29,7 @@ function indexedChars(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 4');
-console.log('');
+header(4);
 console.log(exlaim('What are you doing? Are you a fool?'));
 console.log(exlaim('This is fine?'));
 function exlaim(str){
@@ -50,9 +43,7 @@ function exlaim(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 5');
-console.log('');
+header(5);
 console.log(truncate('The fault, dear Brutus, is not in our stars, but in ourselves.'));
 console.log(truncate('Well, thats\'s just, like, your opinion man.'));
 function truncate(str){
@@ -68,9 +59,7 @@ function truncate(str){
     }
     return temp + '...';
 }
-console.log('\n');
-console.log('Challenge 6');
-console.log('');
+header(6);
 console.log(ciEmailify('coliin jaffe'));
 console.log(ciEmailify('Anthony Derosa'))
 function ciEmailify(str){
@@ -85,9 +74,7 @@ function ciEmailify(str){
     }
     return temp + '@codeimmersives.com';
 }
-console.log('\n');
-console.log('Challenge 7');
-console.log('');
+header(7);
 console.log(reverse('colin'));
 console.log(reverse('mesuara'));
 function reverse(str){
@@ -97,9 +84,7 @@ function reverse(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 8');
-console.log('');
+header(8);
 console.log(onlyVowels('oiae'));
 console.log(onlyVowels('ui'));
 console.log(onlyVowels('Anthony DeRosa'));
@@ -112,9 +97,7 @@ function onlyVowels(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 9');
-console.log('');
+header(9);
 console.log(crazyCase('hello'));
 console.log(crazyCase('multiple words here'));
 console.log(crazyCase('YELLING'));
@@ -129,9 +112,7 @@ function crazyCase(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 10');
-console.log('');
+header(10);
 console.log(titleCase('return of the king'));
 console.log(titleCase('cOde iMMerSives'));
 function titleCase(str){
@@ -152,9 +133,7 @@ function titleCase(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 11');
-console.log('');
+header(11);
 console.log(camelCase('oh Hello'));
 console.log(camelCase('well yeah of course'));
 console.log(camelCase('Boy howdy'));
@@ -171,9 +150,7 @@ function camelCase(str){
     }
     return temp;
 }
-console.log('\n');
-console.log('Challenge 12');
-console.log('');
+header(12);
 console.log(crazyCase2ReturnOfCrazyCase('multiple words here'));
 console.log(crazyCase2ReturnOfCrazyCase('crazy stuff'));
 function crazyCase2ReturnOfCrazyCase(str){
@@ -191,4 +168,15 @@ function crazyCase2ReturnOfCrazyCase(str){
         }
     }
     return temp;
+}
+
+function header(num){
+    if(num === 1){
+        console.log('Challenge ' + num);
+        console.log('');
+        return;
+    }
+    console.log('\n');
+    console.log('Challenge ' + num);
+    console.log('');
 }
