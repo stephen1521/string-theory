@@ -1,6 +1,82 @@
 header(1);
+console.log('xxxxx');
+console.log('xxxxxxxx');
+console.log('\nOutput: ')
 console.log(xify('hello'));
 console.log(xify('Hi there'));
+header(2);
+console.log('g!o!o!d!n!e!s!s!')
+console.log('o!h! !h!e!l!l!o!');
+console.log('\nOutput: ')
+console.log(yellingChars('goodness'));
+console.log(yellingChars('oh hello'));
+header(3);
+console.log('0h1e2l3l4o');
+console.log('0b1y2e');
+console.log('\nOutput: ')
+console.log(indexedChars('hello'));
+console.log(indexedChars('bye'));
+header(4);
+console.log('What are you doing! Are you a fool!');
+console.log('This is fine!');
+console.log('\nOutput: ')
+console.log(exlaim('What are you doing? Are you a fool?'));
+console.log(exlaim('This is fine?'));
+header(5);
+console.log('The fault, dear...');
+console.log('Well, that\'s ju...');
+console.log('\nOutput: ')
+console.log(truncate('The fault, dear Brutus, is not in our stars, but in ourselves.'));
+console.log(truncate('Well, that\'s just, like, your opinion man.'));
+header(6);
+console.log('colin.jaffe@codeimmersives.com');
+console.log('anthony.derosa@codeimmersives.com');
+console.log('\nOutput: ')
+console.log(ciEmailify('coliin jaffe'));
+console.log(ciEmailify('Anthony Derosa'))
+header(7);
+console.log('niloc');
+console.log('arausem');
+console.log('\nOutput: ')
+console.log(reverse('colin'));
+console.log(reverse('mesuara'));
+header(8);
+console.log('oiae');
+console.log('ui');
+console.log('Aoeoa');
+console.log('\nOutput: ')
+console.log(onlyVowels('oiae'));
+console.log(onlyVowels('ui'));
+console.log(onlyVowels('Anthony DeRosa'));
+header(9);
+console.log('hElLo');
+console.log('mUlTiPlE WoRdS HeRe');
+console.log('yElLiNg');
+console.log('\nOutput: ')
+console.log(crazyCase('hello'));
+console.log(crazyCase('multiple words here'));
+console.log(crazyCase('YELLING'));
+header(10);
+console.log('Return Of The King');
+console.log('Code Immersives');
+console.log('\nOutput: ')
+console.log(titleCase('return of the king'));
+console.log(titleCase('cOde iMMerSives'));
+header(11);
+console.log('ohHello');
+console.log('wellYeahOfCourse');
+console.log('boyHowdy');
+console.log('\nOutput: ')
+console.log(camelCase('oh Hello'));
+console.log(camelCase('well yeah of course'));
+console.log(camelCase('Boy howdy'));
+header(12);
+console.log('mUlTiPlE wOrDs HeRe');
+console.log('cRaZy StUfF');
+console.log('\nOutput: ')
+console.log(crazyCase2ReturnOfCrazyCase('multiple words here'));
+console.log(crazyCase2ReturnOfCrazyCase('crazy stuff'));
+
 function xify(str) {
     let temp = '';
     for(let i of str){
@@ -8,9 +84,7 @@ function xify(str) {
     }
     return temp;
 }
-header(2);
-console.log(yellingChars('goodness'));
-console.log(yellingChars('oh hello'));
+
 function yellingChars(str){
     let temp = '';
     for(let i of str) {
@@ -18,9 +92,7 @@ function yellingChars(str){
     }
     return temp;
 }
-header(3);
-console.log(indexedChars('hello'));
-console.log(indexedChars('bye'));
+
 function indexedChars(str){
     let temp = '';
     for(let i = 0; i < str.length; i++) {
@@ -29,9 +101,7 @@ function indexedChars(str){
     }
     return temp;
 }
-header(4);
-console.log(exlaim('What are you doing? Are you a fool?'));
-console.log(exlaim('This is fine?'));
+
 function exlaim(str){
     let temp = '';
     for(let i of str){
@@ -43,9 +113,7 @@ function exlaim(str){
     }
     return temp;
 }
-header(5);
-console.log(truncate('The fault, dear Brutus, is not in our stars, but in ourselves.'));
-console.log(truncate('Well, thats\'s just, like, your opinion man.'));
+
 function truncate(str){
     if(str.length < 15){
         return str;
@@ -59,9 +127,7 @@ function truncate(str){
     }
     return temp + '...';
 }
-header(6);
-console.log(ciEmailify('coliin jaffe'));
-console.log(ciEmailify('Anthony Derosa'))
+
 function ciEmailify(str){
     str = str.toLowerCase();
     let temp = '';
@@ -74,9 +140,7 @@ function ciEmailify(str){
     }
     return temp + '@codeimmersives.com';
 }
-header(7);
-console.log(reverse('colin'));
-console.log(reverse('mesuara'));
+
 function reverse(str){
     let temp = '';
     for(let i = str.length - 1; i >= 0; i--){
@@ -84,10 +148,7 @@ function reverse(str){
     }
     return temp;
 }
-header(8);
-console.log(onlyVowels('oiae'));
-console.log(onlyVowels('ui'));
-console.log(onlyVowels('Anthony DeRosa'));
+
 function onlyVowels(str){
     let temp = '';
     for(let i of str){
@@ -97,10 +158,7 @@ function onlyVowels(str){
     }
     return temp;
 }
-header(9);
-console.log(crazyCase('hello'));
-console.log(crazyCase('multiple words here'));
-console.log(crazyCase('YELLING'));
+
 function crazyCase(str){
     let temp = '';
     for(let i = 0 ; i < str.length; i++) {
@@ -112,9 +170,7 @@ function crazyCase(str){
     }
     return temp;
 }
-header(10);
-console.log(titleCase('return of the king'));
-console.log(titleCase('cOde iMMerSives'));
+
 function titleCase(str){
     let temp = '';
     str =  str.toLowerCase();
@@ -133,10 +189,7 @@ function titleCase(str){
     }
     return temp;
 }
-header(11);
-console.log(camelCase('oh Hello'));
-console.log(camelCase('well yeah of course'));
-console.log(camelCase('Boy howdy'));
+
 function camelCase(str){
     str = str.toLowerCase();
     let temp = "";
@@ -150,9 +203,7 @@ function camelCase(str){
     }
     return temp;
 }
-header(12);
-console.log(crazyCase2ReturnOfCrazyCase('multiple words here'));
-console.log(crazyCase2ReturnOfCrazyCase('crazy stuff'));
+
 function crazyCase2ReturnOfCrazyCase(str){
     let temp = '';
     let cnt = 1;
@@ -174,9 +225,11 @@ function header(num){
     if(num === 1){
         console.log('Challenge ' + num);
         console.log('');
+        console.log('Expected output: ');
         return;
     }
     console.log('\n');
     console.log('Challenge ' + num);
     console.log('');
+    console.log('Expected output: ');
 }
