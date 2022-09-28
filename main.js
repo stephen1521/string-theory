@@ -178,7 +178,7 @@ console.log(crazyCase2ReturnOfCrazyCase('multiple words here'));
 console.log(crazyCase2ReturnOfCrazyCase('crazy stuff'));
 function crazyCase2ReturnOfCrazyCase(str){
     let temp = '';
-    cnt = 1;
+    let cnt = 1;
     for(let i = 0 ; i < str.length; i++) {
         if(str[i] === " ") {
             temp += str[i];
