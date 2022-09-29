@@ -32,7 +32,7 @@ header(6);
 console.log('colin.jaffe@codeimmersives.com');
 console.log('anthony.derosa@codeimmersives.com');
 console.log('\nOutput: ')
-console.log(ciEmailify('coliin jaffe'));
+console.log(ciEmailify('colin jaffe'));
 console.log(ciEmailify('Anthony Derosa'))
 header(7);
 console.log('niloc');
